@@ -118,7 +118,8 @@ const DOM = {
 const Utils = {
     formatAmount(value){
 
-        value = Number(value)*100
+        value = Number(value)*100;
+        value = Math.round(value);
         return value
     },
 
